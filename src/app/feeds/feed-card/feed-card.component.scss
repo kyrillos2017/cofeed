@@ -1,0 +1,28 @@
+.card-actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-img{
+  height: 250px;
+}
+
+.actions{
+  display: flex;
+}
+.action{
+  color: var(--main-color-soft);
+  margin-left: 15px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &.like:hover, &.like.liked{
+    color: var(--red);
+  }
+}
+.action span{
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}

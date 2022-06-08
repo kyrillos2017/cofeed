@@ -1,0 +1,17 @@
+<div class="py-4">
+  <div class="d-flex align-items-center justify-content-between mb-4">
+    <h4 class="fw-bold text-dark-blue mb-0 fs-6">Suggesions For You</h4>
+    <a class="text-main fw-bold fs-6 pointer text-decoration-none">See All</a>
+  </div>
+  <div *ngFor="let item of suggestions ; let i = index">
+    <app-suggestion-card
+    *ngIf="i < 3"
+    [name]="item.name"
+    [bio]="item.bio"
+    [src]="item.src"
+    [width]="item.width"
+    [borderType]="item.borderType"
+    [followed]="item.followed"
+    ></app-suggestion-card>
+  </div>
+</div>

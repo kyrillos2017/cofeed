@@ -1,0 +1,6 @@
+<div [style.width]="width +'px'" [style.height]="width +'px'" [class.border-close]="borderType == 1"
+  [class.border-far]="borderType == 2"  [style.backgroundImage]="'url('+ src +')'">
+  <div *ngIf="me" class="img-overlay">
+    <fa-icon [icon]="faPlus"></fa-icon>
+  </div>
+</div>

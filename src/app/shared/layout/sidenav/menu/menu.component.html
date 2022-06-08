@@ -1,0 +1,8 @@
+<div class="p-4">
+  <h4 class="fw-bold text-dark-blue">Menu</h4>
+  <ul class="list-unstyled p-0">
+    <li *ngFor="let item of menu" class="py-3">
+      <a routerLinkActive="active" class="text-main"><fa-icon class="text-main pr-3" [icon]="item.icon"></fa-icon> {{item.name}}</a>
+    </li>
+  </ul>
+</div>

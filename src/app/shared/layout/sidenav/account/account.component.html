@@ -1,0 +1,13 @@
+<button type="button" class="bg-transparent pointer px-4 mb-3 w-100 border-0 d-flex align-items-center justify-content-between"
+  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+  <h4 class="fw-bold text-dark-blue">Account</h4>
+  <fa-icon [icon]="faAngleDown"></fa-icon>
+</button>
+
+<div id="collapseBasic" class="px-4" [collapse]="isCollapsed" [isAnimated]="true">
+  <app-user-data [name]="currentUser.name" [bio]="currentUser.bio" [src]="currentUser.src"
+    [width]="currentUser.width"></app-user-data>
+  <div class="my-4">
+    <app-card-cover-image [imgTag]="true" src="assets/images/pngtree-purple-abstract-background-polygon-picture-image_741162.jpg"></app-card-cover-image>
+  </div>
+</div>

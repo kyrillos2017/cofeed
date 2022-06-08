@@ -1,0 +1,7 @@
+<div class="d-flex align-items-center justify-content-between mb-3">
+  <app-user-data [name]="name" [bio]="bio" [src]="src" [width]="width" [borderType]="borderType">
+  </app-user-data>
+  <div>
+    <button [ngClass]="{'bg-main text-white border-0' : !followed}" class="rounded py-2 pointer">{{followed ? 'Followed' :'Follow'}}</button>
+  </div>
+</div>

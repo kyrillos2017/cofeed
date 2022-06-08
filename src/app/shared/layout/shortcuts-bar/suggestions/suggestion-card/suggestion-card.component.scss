@@ -1,0 +1,12 @@
+button{
+  transition: .2s ease-in-out;
+  border: none;
+  width: 85px;
+  font-size: 12px;
+  border: 1px solid var(--soft-color);
+
+  &:hover {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+}

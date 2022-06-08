@@ -1,0 +1,13 @@
+.stories{
+  display: flex;
+  overflow-x: scroll;
+  border-bottom: 1px solid var(--soft-color);
+  background-color: var(--soft-bg);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+
+  & >div {
+    margin-right: 20px;
+  }
+}

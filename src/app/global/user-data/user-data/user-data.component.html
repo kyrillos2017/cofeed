@@ -1,0 +1,7 @@
+<div class="user d-flex align-items-center" [ngClass]="{'flex-column text-center': borderType === 2}">
+  <app-user-image [me]="me" [src]="src" [width]="width" [borderType]="borderType"></app-user-image>
+  <div [class.mt-2]="borderType === 2" [class.ml-3]="borderType !== 2" *ngIf="name">
+    <h4 class="text-dark-blue mb-0 pointer">{{name}}</h4>
+    <p *ngIf="bio" class="text-main mb-0">{{bio}}</p>
+  </div>
+</div>

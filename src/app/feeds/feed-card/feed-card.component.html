@@ -1,0 +1,16 @@
+<div *ngIf="feed" [id]="feed.id">
+  <app-card-cover-image class="card-img" [src]="feed.src"></app-card-cover-image>
+  <div class="card-actions mt-3">
+    <app-user-data [src]="feed.user?.src" [name]="feed.user?.name" [borderType]="1" [width]="35"></app-user-data>
+    <div class="actions">
+      <div class="action like" [class.liked]="feed?.isLiked" (click)="like()">
+          <fa-icon [icon]="heart"></fa-icon>
+          <span>{{feed?.isLiked ? feed?.likes!! + 1 : feed?.likes}}</span>
+      </div>
+      <div class="action">
+        <fa-icon [icon]="comment"></fa-icon>
+        <span>{{feed.comments}}</span>
+    </div>
+    </div>
+  </div>
+</div>

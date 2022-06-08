@@ -1,0 +1,17 @@
+<div class="d-flex align-items-center justify-content-between mb-4 px-2">
+  <h4 class="fw-bold text-dark-blue mb-0 fs-6">Feeds</h4>
+  <ul>
+    <li><a class="text-main pointer">All</a></li>
+    <li><a class="text-main pointer">Following</a></li>
+    <li><a class="text-main pointer">Newest</a></li>
+    <li><a class="text-main pointer active">Popular</a></li>
+  </ul>
+</div>
+
+<div class="grid">
+  <div *ngFor="let feed of feeds" class="mb-4 col-6">
+    <div>
+      <app-feed-card [feed]="feed" ></app-feed-card>
+    </div>
+  </div>
+</div>

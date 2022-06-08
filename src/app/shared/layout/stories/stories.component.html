@@ -1,0 +1,5 @@
+<div class="stories p-4">
+  <div *ngFor="let story of stories">
+    <app-user-data class="pointer" [me]="story.me" [src]="story.src" [name]="story.name" [width]="story.width" [borderType]="story.borderType"></app-user-data>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+li a{
+  opacity: .7;
+  text-decoration: none;
+
+  & .active {
+    opacity: 1;
+  }
+}
